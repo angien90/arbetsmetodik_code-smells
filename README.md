@@ -10,7 +10,7 @@ G
 - [ ] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
 - [ ] Mobilvyn
-- [ ] Språk
+- [x] Språk
 - [ ] Rensa loggning
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
