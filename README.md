@@ -2,10 +2,10 @@
 
 G
 - [x] Fixa till README.md
-- [ ] Skapa issues
+- [x] Skapa issues
 - [ ] Använda Conventional Commits i hela projekt
 - [ ] Få projektet att funka
-- [ ] CSS till Sass
+- [x] CSS till Sass
 - [ ] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
