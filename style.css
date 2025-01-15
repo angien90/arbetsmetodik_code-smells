@@ -69,6 +69,19 @@ a:active, a:hover {
   color: rgb(85, 85, 218);
 }
 
+.error-message {
+  position: fixed;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+}
+
 @media screen and (min-width: 1000px) {
   .podcast-list-gallery {
     display: grid;
