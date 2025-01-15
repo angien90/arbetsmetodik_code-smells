@@ -68,14 +68,14 @@ a--active, a--hover {
 }
 
 @media screen and (min-width: 1000px) {
-  .section__podlist-pods {
+  .section_podlist-pods {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .section__podlist-pods {
+  .section_podlist-pods {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
