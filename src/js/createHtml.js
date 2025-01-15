@@ -19,7 +19,6 @@ export async function createHtml() {
 function createArticle() {
     const articleElement = document.createElement('article');
     articleElement.classList.add('article');
-    articleElement.setAttribute('tabindex', '1');
     podcastGallery.appendChild(articleElement);
     return articleElement;
 }
@@ -58,7 +57,6 @@ function createLink(textContainer, podcast) {
     const link = document.createElement('a');
     const linkText = document.createTextNode('Lyssna här');
     link.setAttribute('href', podcast.programurl);
-    link.setAttribute('tabindex', '1');
     link.appendChild(linkText);
     textContainer.appendChild(link);
   }
