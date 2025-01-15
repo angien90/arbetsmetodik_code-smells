@@ -12,13 +12,13 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.section_article {
+article {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
 }
 
-.section_article_div {
+article div {
   display: inline-flex;
   flex-direction: column;
   margin-top: 0;
@@ -68,14 +68,14 @@ a:active, a:hover {
 }
 
 @media screen and (min-width: 1000px) {
-  .section_podlist-pods {
+  .podcast-list-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .section_podlist-pods {
+  .podcast-list-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

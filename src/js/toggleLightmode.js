@@ -1,22 +1,15 @@
-const toggleLightModeButton = document.querySelector('.toggle-btn');
+const toggleLightModeButton = document.querySelector('.toggle-button');
 
 if (toggleLightModeButton) {
-    console.log(toggleLightModeButton);
     toggleLightModeButton.addEventListener('click', toggleLightMode);
 } else {
-    console.error('Knappen för ligt-/darkmode kunde inte hittas');
+    console.error('Knappen för light-/darkmode kunde inte hittas');
 }
 
 export function toggleLightMode() {
-    document.body.classList.toggle('darkmode');
+    const isDarkMode = document.body.classList.toggle('darkmode');
 
-    if (document.body.classList.contains('darkmode')) {
-        toggleLightModeButton.innerHTML = 'Välj mörkt läge';
-        console.log('Mörkt läge');
-    } else {
-        toggleLightModeButton.innerHTML = 'Välj ljust läge';
-        console.log('Ljust läge');
-    }   
+    toggleLightModeButton.innerHTML = isDarkMode ? 'Välj ljust läge' : 'Välj mörkt läge';  
 }
 
 export default toggleLightMode;
