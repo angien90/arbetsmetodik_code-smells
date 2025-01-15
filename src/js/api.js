@@ -1,8 +1,7 @@
-
 export async function getPodcasts() {
     try {
-        const response = await fetch('https://api.sr.se/api/v2/programs/index?programcategoryid=133&format=json&pagination=false&indent=true&filter=program.archived&filterValue=false');
-        
+        const response = await fetch(import.meta.env.VITE_API_URL);
+
         if (!response.ok) {
             throw new Error(`HTTP-fel! Status: ${response.status}`);
         }
