@@ -10,7 +10,7 @@ export async function createHtml() {
         createImage(articleElement, podcast);
         const textContainer = createTextContainer(articleElement);
         createHeader(textContainer, podcast);
-         createDescription(textContainer, podcast);
+        createDescription(textContainer, podcast);
         createLink(textContainer, podcast);
     });
   }
