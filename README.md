@@ -3,7 +3,7 @@
 G
 - [x] Fixa till README.md
 - [x] Skapa issues
-- [ ] Använda Conventional Commits i hela projekt
+- [x] Använda Conventional Commits i hela projekt
 - [x] Få projektet att funka
 - [x] CSS till Sass
 - [x] Enhetlig namngivning i CSS:en
@@ -12,7 +12,7 @@ G
 - [x] Mobilvyn
 - [x] Språk
 - [ ] Rensa loggning
-- [ ] Dokumentation
+- [ ] Dokumentation/README
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [x] Eliminera onödig kod
@@ -24,8 +24,8 @@ VG
 - [ ] Gör en tillgänglighetsgranskning av sidan
 - [ ] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
-- [ ] Hantera fel i API-anropet
+- [x] Hantera fel i API-anropet
 - [ ] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
-- [ ] Enhetlig syntax i CSS:en
+- [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages
