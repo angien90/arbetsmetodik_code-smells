@@ -1,14 +1,14 @@
 :root {
   --primary-color: rgba(255, 255, 255, 0.87);
   --secondary-color: #242424;
-  --highlight-color: rgb(85, 85, 218);
+  --highlight-color: #0BDBEA;
   --error-bg-color: #f44336;
   --error-text-color: white;
   --font-family: 'Source Sans Pro', sans-serif;
   --font-size-large: 2.5rem;
   --font-size-medium: 1.25rem;
   --font-size-small: 1rem;
-  --font-size-error: 16px;
+  --font-size-error: 1rem;
 }
 
 body {
@@ -69,8 +69,8 @@ a {
   }
 }
 
-/* Dark/Lightmode */
-.darkmode {
+/* Lightmode */
+.lightmode {
   background-color: antiquewhite;
   color: #242424;
 

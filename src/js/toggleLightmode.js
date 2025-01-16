@@ -7,9 +7,9 @@ if (toggleLightModeButton) {
 }
 
 export function toggleLightMode() {
-    const isDarkMode = document.body.classList.toggle('darkmode');
+    const isLightMode = document.body.classList.toggle('lightmode');
 
-    toggleLightModeButton.innerHTML = isDarkMode ? 'Välj mörkt läge' : 'Välj ljust läge';  
+    toggleLightModeButton.innerHTML = isLightMode ? 'Välj mörkt läge' : 'Välj ljust läge';  
 }
 
 export default toggleLightMode;
