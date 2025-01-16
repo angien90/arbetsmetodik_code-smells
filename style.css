@@ -1,7 +1,9 @@
 :root {
   --primary-color: rgba(255, 255, 255, 0.87);
   --secondary-color: #242424;
-  --highlight-color: #0BDBEA;
+  --background-lightmode: antiquewhite;
+  --highlight-color-darkmode: #0BDBEA;
+  --highlight-color-lightmode: rgb(85, 85, 218);
   --error-bg-color: #f44336;
   --error-text-color: white;
   --font-family: 'Source Sans Pro', sans-serif;
@@ -60,26 +62,26 @@ p {
   margin: 0;
 }
 
+/* Lightmode */
+.lightmode {
+  background-color: var(--background-lightmode);
+  color: var(--secondary-color);
+
+  a {
+    color: var(--secondary-color);
+
+    &:active, &:hover {
+      color: var(--highlight-color-lightmode);
+    }
+  }
+}
+
 a {
   color: var(--primary-color);
   cursor: pointer;
 
   &:active, &:hover {
-    color: var(--highlight-color);
-  }
-}
-
-/* Lightmode */
-.lightmode {
-  background-color: antiquewhite;
-  color: #242424;
-
-  a {
-    color: #242424;
-
-    &:active, &:hover {
-      color: rgb(85, 85, 218);
-    }
+    color: var(--highlight-color-darkmode);
   }
 }
 
