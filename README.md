@@ -11,7 +11,10 @@ Det här projektet är en webbapplikation som listar humorprogram från Sveriges
 - Användarvänligt gränssnitt: Enkla och tydliga funktioner som gör det enkelt för användaren att navigera och hitta podcasts.
 
 ## Skärmdump på hur det ser ut
+#### Webbapplikationen
 
+
+#### Lighthouse-analys
 
 
 ## Teknologier som har använts

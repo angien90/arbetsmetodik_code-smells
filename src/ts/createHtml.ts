@@ -1,3 +1,4 @@
+import { log } from './consoleLog';
 import { getPodcasts } from './api';
 
 interface Podcast {
@@ -11,7 +12,7 @@ const podcastGallery = document.querySelector('.podcast-list-gallery') as HTMLEl
 
 export async function createHtml(): Promise<void> {
     const podcasts: Podcast[] | null = await getPodcasts();
-    console.log(podcasts);  // Lägg till denna rad för att se strukturen på 'podcasts'
+    log(podcasts);  // Lägg till denna rad för att se strukturen på 'podcasts'
     if (podcasts && Array.isArray(podcasts)) {
         podcasts.forEach((podcast) => {
             const articleElement = createArticle();
@@ -22,7 +23,7 @@ export async function createHtml(): Promise<void> {
             createLink(textContainer, podcast);
         });
     } else {
-        console.error('Fel: Podcasts är inte en array');
+        log('Fel: Podcasts är inte en array');
     }
 }
 

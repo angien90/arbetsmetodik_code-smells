@@ -1,9 +1,11 @@
+import { log } from './consoleLog';
+
 const toggleLightModeButton = document.querySelector('.toggle-button') as HTMLButtonElement | null;
 
 if (toggleLightModeButton) {
     toggleLightModeButton.addEventListener('click', toggleLightMode);
 } else {
-    console.error('Knappen för light-/darkmode kunde inte hittas');
+    log('Knappen för light-/darkmode kunde inte hittas');
 }
 
 export function toggleLightMode(): void {

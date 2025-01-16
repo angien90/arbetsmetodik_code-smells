@@ -1,3 +1,5 @@
+import { log } from './consoleLog';
+
 interface Podcast {
     name: string;
     description: string;
@@ -16,7 +18,7 @@ interface Podcast {
         const data: { programs: Podcast[] } = await response.json();  // Förvänta dig en objektstruktur med en "programs"-nyckel
         return data.programs || [];  // Säkerställ att du alltid returnerar en array
     } catch (error) {
-        console.error('Något blev fel:', error);
+        log('Något blev fel:', error);
         displayErrorMessage("Vi kunde inte hämta podcastinformation just nu. Försök igen senare!");
         return null;
     }
