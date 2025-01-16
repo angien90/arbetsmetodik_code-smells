@@ -17,13 +17,16 @@ importers:
     devDependencies:
       stylelint:
         specifier: ^16.13.2
-        version: 16.13.2
+        version: 16.13.2(typescript@5.7.3)
       stylelint-config-prettier:
         specifier: ^9.0.5
-        version: 9.0.5(stylelint@16.13.2)
+        version: 9.0.5(stylelint@16.13.2(typescript@5.7.3))
       stylelint-config-standard:
         specifier: ^37.0.0
-        version: 37.0.0(stylelint@16.13.2)
+        version: 37.0.0(stylelint@16.13.2(typescript@5.7.3))
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
       vite:
         specifier: ^6.0.6
         version: 6.0.6
@@ -776,6 +779,11 @@ packages:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
 
+  typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
@@ -1065,12 +1073,14 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
-  cosmiconfig@9.0.0:
+  cosmiconfig@9.0.0(typescript@5.7.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
+    optionalDependencies:
+      typescript: 5.7.3
 
   css-functions-list@3.2.3: {}
 
@@ -1382,20 +1392,20 @@ snapshots:
     dependencies:
       ansi-regex: 5.0.1
 
-  stylelint-config-prettier@9.0.5(stylelint@16.13.2):
+  stylelint-config-prettier@9.0.5(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2
+      stylelint: 16.13.2(typescript@5.7.3)
 
-  stylelint-config-recommended@15.0.0(stylelint@16.13.2):
+  stylelint-config-recommended@15.0.0(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2
+      stylelint: 16.13.2(typescript@5.7.3)
 
-  stylelint-config-standard@37.0.0(stylelint@16.13.2):
+  stylelint-config-standard@37.0.0(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2
-      stylelint-config-recommended: 15.0.0(stylelint@16.13.2)
+      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint-config-recommended: 15.0.0(stylelint@16.13.2(typescript@5.7.3))
 
-  stylelint@16.13.2:
+  stylelint@16.13.2(typescript@5.7.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
@@ -1404,7 +1414,7 @@ snapshots:
       '@dual-bundle/import-meta-resolve': 4.1.0
       balanced-match: 2.0.0
       colord: 2.9.3
-      cosmiconfig: 9.0.0
+      cosmiconfig: 9.0.0(typescript@5.7.3)
       css-functions-list: 3.2.3
       css-tree: 3.1.0
       debug: 4.4.0
@@ -1461,6 +1471,8 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  typescript@5.7.3: {}
 
   util-deprecate@1.0.2: {}
 

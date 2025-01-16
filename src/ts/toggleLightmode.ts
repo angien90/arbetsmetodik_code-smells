@@ -1,4 +1,4 @@
-const toggleLightModeButton = document.querySelector('.toggle-button');
+const toggleLightModeButton = document.querySelector('.toggle-button') as HTMLButtonElement | null;
 
 if (toggleLightModeButton) {
     toggleLightModeButton.addEventListener('click', toggleLightMode);
@@ -6,10 +6,12 @@ if (toggleLightModeButton) {
     console.error('Knappen för light-/darkmode kunde inte hittas');
 }
 
-export function toggleLightMode() {
+export function toggleLightMode(): void {
     const isLightMode = document.body.classList.toggle('lightmode');
 
-    toggleLightModeButton.innerHTML = isLightMode ? 'Välj mörkt läge' : 'Välj ljust läge';  
+    if (toggleLightModeButton) {
+        toggleLightModeButton.innerHTML = isLightMode ? 'Välj mörkt läge' : 'Välj ljust läge';
+    }
 }
 
 export default toggleLightMode;
