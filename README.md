@@ -98,6 +98,6 @@ VG
 - [ ] Rensa bort paket som inte används
 - [x] Hantera fel i API-anropet
 - [ ] Gör en Lighthouse-analys
-- [ ] Läs av utvecklingsmiljön
+- [/] Läs av utvecklingsmiljön (hoppade denna pga. tidsbrist)
 - [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages
