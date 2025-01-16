@@ -13,8 +13,14 @@ Det här projektet är en webbapplikation som listar humorprogram från Sveriges
 ## Skärmdump på hur det ser ut
 #### Webbapplikationen
 
+![webbapplikationen i desktop-läge (ljust läge)](./images/ljust_lage.png)
+![webbapplikationen i desktop-läge (mörkt läge)](./images/morkt_lage.png)
+![webbapplikationen i mobil-läge](./images/mobil_vy.png)
 
 #### Lighthouse-analys
+
+![lighthouseanalys deskop-läge](./images/lighthouse_analys_desktop.png)
+![lighthouseanalys mobil-läge](./images/lighthouse_analys_mobile.png)
 
 
 ## Teknologier som har använts
@@ -68,12 +74,12 @@ Det här projektet är en webbapplikation som listar humorprogram från Sveriges
 - .env: Den här filen innehåller en miljövariabel, VITE_API_URL, som lagrar URL:en till det externa API:et som används för att hämta data om Sveriges Radios (SR) humorprogram. Denna URL används för att göra en HTTP-förfrågan och få information om humorprogrammen. .env-filen säkerställer att API-nycklar eller andra känsliga inställningar inte exponeras i koden, vilket ger en säker och flexibel hantering av konfiguration.
 
 
-
-
 ## Uppgiftsbeskrivning
 Du har precis fått din första praktikplats på webbyrån Wundermålig AB, och din första uppgift är att fixa till kod som en annan utvecklare lämnat efter sig. Koden håller ungefär samma standard som företagsnamnet.
 
 Du har fått nedan kravspecifikation från din handledare.
+
+Detta var en individuell uppgift. 
 
 #### Kravspec/Checklista för uppgiften
 G
@@ -88,7 +94,7 @@ G
 - [x] Mobilvyn
 - [x] Språk
 - [x] Rensa loggning (rad 95 för VG)
-- [ ] Dokumentation/README
+- [x] Dokumentation/README
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [x] Eliminera onödig kod
@@ -101,7 +107,7 @@ VG
 - [x] Utnyttja features i Sass i CSS:en
 - [x] Rensa bort paket som inte används
 - [x] Hantera fel i API-anropet
-- [ ] Gör en Lighthouse-analys
+- [x] Gör en Lighthouse-analys
 - [/] Läs av utvecklingsmiljön (hoppade denna pga. tidsbrist)
 - [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages
