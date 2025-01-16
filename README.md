@@ -83,7 +83,7 @@ G
 - [x] Enhetlig kodkvalitet
 - [x] Mobilvyn
 - [x] Språk
-- [ ] Rensa loggning
+- [x] Rensa loggning (rad 95 för VG)
 - [ ] Dokumentation/README
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
@@ -92,7 +92,7 @@ G
   
 VG
 - [x] Rätt sak på rätt plats
-- [ ] Hantera loggning på ett effektivt sätt
+- [x] Hantera loggning på ett effektivt sätt
 - [x] Gör en tillgänglighetsgranskning av sidan
 - [x] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
