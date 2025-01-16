@@ -46,6 +46,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     name: Deploy
+    environment:
+      name: github-pages  # Ange miljö för deployment
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
