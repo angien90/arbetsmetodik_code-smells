@@ -22,6 +22,21 @@ Det här projektet är en webbapplikation som listar humorprogram från Sveriges
 ![lighthouseanalys deskop-läge](./images/lighthouse_analys_desktop.png)
 ![lighthouseanalys mobil-läge](./images/lighthouse_analys_mobile.png)
 
+## ESLint: Förbättrad Kodkvalitet och Konsistens
+För att säkerställa hög kodkvalitet och enhetlighet i projektet använder vi ESLint, ett kraftfullt verktyg för att analysera och identifiera potentiella problem i vår JavaScript- och TypeScript-kod. ESLint är integrerat i projektets utvecklingsmiljö och hjälper oss att:
+
+- Hålla enhetlig kodstil: Alla utvecklare följer samma regler, vilket gör koden lättare att förstå och underhålla.
+- Förebygga buggar: Genom att analysera kod för vanliga problem kan vi tidigt identifiera potentiella fel.
+- Automatisk fixning av småproblem: Många mindre problem kan åtgärdas automatiskt med ett enkelt kommando.
+- Anpassning efter projektets behov: Vi har skräddarsytt reglerna för att passa just detta projekt och dess krav.
+
+#### Fördelar med ESLint i detta projekt
+ESLint hjälper oss att leverera en produkt med hög standard som är både lätt att vidareutveckla och underhålla. Med hjälp av verktyget kan vi säkerställa att vi lever upp till checklistans krav, exempelvis:
+
+- "Enhetlig kodkvalitet"
+- "Rensa onödig kod"
+- "Hantera loggning på ett effektivt sätt"
+- "Enhetlig syntax i CSS:en (med hjälp av Prettier)"
 
 ## Teknologier som har använts
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -75,11 +90,12 @@ Det här projektet är en webbapplikation som listar humorprogram från Sveriges
 
 
 ## Uppgiftsbeskrivning
-Du har precis fått din första praktikplats på webbyrån Wundermålig AB, och din första uppgift är att fixa till kod som en annan utvecklare lämnat efter sig. Koden håller ungefär samma standard som företagsnamnet.
+Detta projekt var en individuell uppgift under utbildningen till frontendutvecklare. Uppdraget gick ut på att simulera den första praktikplatsen hos webbyrån Undermålig AB, där den första arbetsuppgiften var att förbättra och strukturera kod som en tidigare utvecklare hade lämnat efter sig.
 
-Du har fått nedan kravspecifikation från din handledare.
+Utöver detta skulle vi också presentera och sälja in fördelarna med att använda ESLint för att höja kodkvaliteten och skapa en enhetligare utvecklingsmiljö.
 
-Detta var en individuell uppgift. 
+Nedan följer kravspecifikationen som tillhandahölls av handledaren.
+
 
 #### Kravspec/Checklista för uppgiften
 G
