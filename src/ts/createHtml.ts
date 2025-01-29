@@ -1,17 +1,11 @@
 import { log } from './consoleLog';
 import { getPodcasts } from './api';
-
-interface Podcast {
-    name: string;
-    description: string;
-    programurl: string;
-    socialimage: string;
-  }
+import { IPodcast } from './api';
 
 const podcastGallery = document.querySelector('.podcast-list-gallery') as HTMLElement;
 
 export async function createHtml(): Promise<void> {
-    const podcasts: Podcast[] | null = await getPodcasts();
+    const podcasts: IPodcast[] | null = await getPodcasts();
     log(podcasts);  // Lägg till denna rad för att se strukturen på 'podcasts'
     if (podcasts && Array.isArray(podcasts)) {
         podcasts.forEach((podcast) => {

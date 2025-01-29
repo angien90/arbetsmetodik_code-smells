@@ -1,13 +1,13 @@
 import { log } from './consoleLog';
 
-interface Podcast {
+export interface IPodcast {
     name: string;
     description: string;
     programurl: string;
     socialimage: string;
   }
   
-  export async function getPodcasts(): Promise<Podcast[] | null> {
+export async function getPodcasts(): Promise<IPodcast[] | null> {
     try {
         const response = await fetch(import.meta.env.VITE_API_URL);
 
@@ -15,7 +15,7 @@ interface Podcast {
             throw new Error(`HTTP-fel! Status: ${response.status}`);
         }
 
-        const data: { programs: Podcast[] } = await response.json();  // Förvänta dig en objektstruktur med en "programs"-nyckel
+        const data: { programs: IPodcast[] } = await response.json();  // Förvänta dig en objektstruktur med en "programs"-nyckel
         return data.programs || [];  // Säkerställ att du alltid returnerar en array
     } catch (error) {
         log('Något blev fel:', error);
