@@ -86,7 +86,8 @@ ESLint hjälper oss att leverera en produkt med hög standard som är både lät
 
 - consoleLog.ts: Denna fil innehåller en funktion log som används för att skriva ut meddelanden i konsolen. Funktionen tar emot ett eller flera argument och loggar dem endast om miljön är inställd på production. Om miljön är inställd på utveckling (dvs. inte production), loggas inte meddelandena för att hålla produktionskonsolen ren från onödiga loggar.
 
-- .env: Den här filen innehåller en miljövariabel, VITE_API_URL, som lagrar URL:en till det externa API:et som används för att hämta data om Sveriges Radios (SR) humorprogram. Denna URL används för att göra en HTTP-förfrågan och få information om humorprogrammen. .env-filen säkerställer att API-nycklar eller andra känsliga inställningar inte exponeras i koden, vilket ger en säker och flexibel hantering av konfiguration.
+- .env: Den här filen innehåller en miljövariabel, VITE_API_URL, som lagrar URL:en till det externa API:et som används för att hämta data om Sveriges Radios (SR) humorprogram. Denna URL används för att göra en HTTP-förfrågan och få information om humorprogrammen. 
+.env-filen säkerställer att API-nycklar eller andra känsliga inställningar inte exponeras i koden, vilket ger en säker och flexibel hantering av konfiguration.
 
 
 ## Uppgiftsbeskrivning
