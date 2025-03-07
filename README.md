@@ -128,3 +128,7 @@ VG
 - [/] Läs av utvecklingsmiljön (hoppade denna pga. tidsbrist)
 - [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages
+
+## Betyg 
+![image](https://github.com/user-attachments/assets/942790dc-b798-4200-a2d9-3634f0dd819e)
+
