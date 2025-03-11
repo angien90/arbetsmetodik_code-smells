@@ -37,11 +37,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: pnpm install
-      - name: Set environment variables for build
-        run: |
-          echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" >> .env
       - name: Build with Vite
         run: pnpm build
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -7,23 +7,24 @@ export interface IPodcast {
     socialimage: string;
   }
   
-export async function getPodcasts(): Promise<IPodcast[] | null> {
+  export async function getPodcasts(): Promise<IPodcast[] | null> {
     try {
-        const response = await fetch(import.meta.env.VITE_API_URL);
+        const apiUrl = import.meta.env.VITE_API_URL;
+        console.log("Fetching from:", apiUrl);  // Debugga API-länken
+        const response = await fetch(apiUrl);
 
         if (!response.ok) {
             throw new Error(`HTTP-fel! Status: ${response.status}`);
         }
 
-        const data: { programs: IPodcast[] } = await response.json();  // Förvänta dig en objektstruktur med en "programs"-nyckel
-        return data.programs || [];  // Säkerställ att du alltid returnerar en array
+        const data: { programs: IPodcast[] } = await response.json();
+        return data.programs || [];
     } catch (error) {
-        log('Något blev fel:', error);
-        displayErrorMessage("Vi kunde inte hämta podcastinformation just nu. Försök igen senare!");
+        console.error("Fel vid hämtning:", error);
         return null;
     }
 }
-
+ 
 /**
  * Funktion för felmeddelande när podcastinformation inte kan visas
  * Dialogen stängs efter 10 sekunder
